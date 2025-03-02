@@ -23,8 +23,9 @@ services:
       - 8084:8084
       - 8883:8883
       - 18083:18083
-    # volumes:
-    #   - $PWD/emqx_data:/opt/emqx/data
+    volumes:
+      - $PWD/emqx_data:/opt/emqx/data
+      - $PWD/emqx_log:/opt/emqx/log
 
 networks:
   emqx-bridge:
