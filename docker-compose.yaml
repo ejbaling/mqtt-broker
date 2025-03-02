@@ -24,6 +24,7 @@ services:
     volumes:
       - ./emqx_data:/opt/emqx/data
       - ./emqx_log:/opt/emqx/log
+    restart: always
 
 networks:
   emqx-bridge:
