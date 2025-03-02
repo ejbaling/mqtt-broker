@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   emqx1:
     image: emqx:5.8.5
